@@ -1,9 +1,9 @@
 package codility.timecomplexity;
 
-public class TapeEquilibrium {
+class TapeEquilibrium {
 
 
-    public int solution(int[] A) {
+    int solution(int[] A) {
         if(A.length==2){
             return Math.abs(A[0]-A[1]);
         }
@@ -16,16 +16,14 @@ public class TapeEquilibrium {
         }
 
         int result = Math.abs(leftSum - rightSum);
-        int pointer = 1;
 
-        for(int i = 1; i < A.length; i++){
+        for(int i = 1; i < A.length-1; i++){
             leftSum+=A[i];
             rightSum-=A[i];
             int tmpResult = Math.abs(leftSum-rightSum);
             if(tmpResult<result){
                 result=tmpResult;
             }
-
         }
 
         return result;
