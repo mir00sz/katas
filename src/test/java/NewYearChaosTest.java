@@ -7,7 +7,7 @@ class NewYearChaosTest {
 
     @Test
     public void newYearChaosTest(){
-        int input[] = {2, 1, 5, 3, 4};
+        int[] input = {2, 1, 5, 3, 4};
         String output = NewYearChaos.minimumBribes(input);
         assertEquals("5", output);
     }

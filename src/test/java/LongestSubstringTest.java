@@ -29,21 +29,20 @@ class LongestSubstringTest {
         int[] result4 = longestSubstring.substring(input4);
 
 
-
-        assertTrue(Arrays.equals(shouldBe1,result1),"Should be: "
+        assertArrayEquals(shouldBe1, result1, "Should be: "
                 + Arrays.toString(shouldBe1)
                 + " But there is: "
                 + Arrays.toString(result1));
 
-        assertTrue(Arrays.equals(shouldBe2,result2),"Should be: "
+        assertArrayEquals(shouldBe2, result2, "Should be: "
                 + Arrays.toString(shouldBe2)
                 + " But there is: "
                 + Arrays.toString(result2));
-        assertTrue(Arrays.equals(shouldBe3,result3),"Should be: "
+        assertArrayEquals(shouldBe3, result3, "Should be: "
                 + Arrays.toString(shouldBe3)
                 + " But there is: "
                 + Arrays.toString(result3));
-        assertTrue(Arrays.equals(shouldBe4,result4),"Should be: "
+        assertArrayEquals(shouldBe4, result4, "Should be: "
                 + Arrays.toString(shouldBe4)
                 + " But there is: "
                 + Arrays.toString(result4));

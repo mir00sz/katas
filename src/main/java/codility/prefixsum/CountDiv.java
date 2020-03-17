@@ -5,16 +5,16 @@ public class CountDiv {
 
     public int solution(int A, int B, int K) {
         // write your code in Java SE 8
-        int result = 0;
-        if((A%K) == 0 || (B%K) == 0) {
-            result++;
+        if (A % K > 0) {
+            return (B - (A - A % K)) / K;
         }
 
-        int diff = B-A;
-        int mod = diff/K;
+        if (A % K == 0) {
+            return ((B - (A - A % K)) / K) + 1;
+        }
 
-        result += mod;
+        return -1;
 
-        return result;
+
     }
 }

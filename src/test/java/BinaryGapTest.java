@@ -8,7 +8,6 @@ class BinaryGapTest {
     void solution() {
         BinaryGap binaryGap = new BinaryGap();
 
-/*
         int n = 1041;
         assertEquals(5,binaryGap.solution(n));
 
@@ -23,7 +22,6 @@ class BinaryGapTest {
 
         n=15;
         assertEquals(0,binaryGap.solution(n));
-*/
 
         int nLarge=561892;
         assertEquals(3,binaryGap.solution(nLarge));
