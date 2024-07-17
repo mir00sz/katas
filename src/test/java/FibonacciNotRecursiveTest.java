@@ -1,8 +1,8 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-class FibonacciRecursiveTest {
+class FibonacciNotRecursiveTest {
 
     @Test
     void getNthFibonacci() {
@@ -15,7 +15,7 @@ class FibonacciRecursiveTest {
     }
 
     private void assertFib(int n, long expectedResult) {
-        FibonacciRecursive2 fibonacciNumbers = new FibonacciRecursive2();
+        FibonacciNotRecursive fibonacciNumbers = new FibonacciNotRecursive();
         long result = fibonacciNumbers.getNthFibonacci(n);
         assertEquals(expectedResult,result);
     }

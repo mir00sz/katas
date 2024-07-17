@@ -16,7 +16,7 @@ class LongestSubstringTest {
         String input3 = "abbDDDeeeeeeeee";
         String input4 = "aabbbbbbbbbccc";
 
-        LongestSubstring longestSubstring = new LongestSubstring();
+        LongestSubstring2 longestSubstring = new LongestSubstring2();
 
         int[] shouldBe1 = new int[]{-1, 0};
         int[] shouldBe2 = new int[]{0, 3};
@@ -47,6 +47,12 @@ class LongestSubstringTest {
                 + " But there is: "
                 + Arrays.toString(result4));
 
+    }
+
+    @Test
+    public void longestSubstring2() {
+        LongestSubstring2 longestSubstring = new LongestSubstring2();
+        longestSubstring.substring("");
     }
 
 
