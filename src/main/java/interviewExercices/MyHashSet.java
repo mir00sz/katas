@@ -22,10 +22,7 @@ public class MyHashSet {
     }
 
     public boolean contains(int key) {
-        if (ARRAY[key] >= 0) {
-            return true;
-        }
-        return false;
+        return ARRAY[key] >= 0;
     }
 
 
