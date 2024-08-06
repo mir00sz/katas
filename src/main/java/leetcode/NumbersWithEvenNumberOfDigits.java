@@ -40,3 +40,30 @@ public class NumbersWithEvenNumberOfDigits {
         return counter;
     }
 }
+
+/**
+ * This solution has time complexity of O(N log_10 M) where M is the number with the largest number of digits
+ * Better approach is:
+ * Constraint says 1≤nums[i]≤10^5
+ * So:
+ * 1⇝9 have 1, hence an odd number of digits.
+ * 10⇝99 have 2, hence an even number of digits.
+ * 100⇝999 have 3, hence an odd number of digits.
+ * 1000⇝9999 have 4, hence an even number of digits.
+ * 10000⇝99999 have 5, hence an odd number of digits.
+ * 100000 has 6, hence an even number of digits.
+ *
+ * class Solution {
+ *     public int findNumbers(int[] nums) {
+ *         // Counter to count the number of even digit integers
+ *         int evenDigitCount = 0;
+ *
+ *         for (int num : nums) {
+ *             if ((num >= 10 && num <= 99) || (num >= 1000 && num <= 9999) || num == 100000)
+ *                 evenDigitCount++;
+ *         }
+ *
+ *         return evenDigitCount;
+ *     }
+ * }
+ */
